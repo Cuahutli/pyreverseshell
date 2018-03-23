@@ -30,7 +30,7 @@ def socket_bind():
 # Estableciendo conexión con el cliente  (el socket está esperando por esto)
 def socket_accept():
     conn, address = s.accept() #Acepta una nueva conexión
-    print("Connection has been establish |" +  "IP " + address[0] + " | Port" + str(address[1]))
+    print("Connection has been establish [ " +  "IP: " + address[0] + " | Port: " + str(address[1]) + " ]")
     send_commands(conn)
     conn.close()
 
